@@ -1,0 +1,337 @@
+html
+{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+header.navbar a.active,
+header .navbar a:hover{
+    color: #fff;
+    background: var(--green);
+}
+header .icons #menu-bars
+{
+    display: none;
+}
+header
+{
+    /* border: 1px solid; */
+    display: flex;
+    font-size: 2rem;
+    padding: 20px;
+    /* gap: 20%; */
+    justify-content: space-between;
+    background-color: #272b2cde;
+   
+}
+header a{
+    text-decoration: none;
+}
+#menu-bars{
+    display: none;
+}
+.navbar
+{
+    /* border: 1px solid; */
+    display: flex;
+    gap: 7rem;
+    padding: 10px;
+}
+.navbar a{
+    color: cyan;
+}
+.logo
+{
+    padding: 10px;
+    color: white;
+    /* border: 1px solid; */
+}
+.container
+{
+    /* border: 1px solid; */
+    height: 84vh;
+    background: url("computerr.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-position: center;
+    
+}
+.page1
+{
+    /* border: 1px solid; */
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.page1 h1{
+    font-size: 10rem;
+    color: white;
+}
+.page1 p{
+    font-weight: 800;
+    font-size: 2rem;
+    /* margin-top: -10%; */
+    color:cadetblue;
+}
+.button{
+    display: flex;
+    gap: 10px;
+}
+.button button{
+    padding: 10px 30px;
+}
+.container2 .heading
+{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
+.page2 div{
+    width: 28%;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 20px;
+}
+.page2
+{
+    width: 90%;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-between;
+}
+.page2 p{
+    font-size: 2rem;
+    line-height: 1.5;
+}
+.page2 h2{
+    font-size: 2rem;
+}
+.page2 button
+{
+    width: 50%;
+    padding: 5px;
+}
+.page2 img{
+    width: 20%;
+}
+.container2
+{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.head
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+.page3 h1{
+    font-size: 5rem;
+}
+.page3
+{
+    padding: 0px 30px;
+    /* display: flex; */
+    
+}
+.page4
+{
+    display: flex;
+}
+.p3-left
+{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+.p3-left input{
+    padding: 20px;
+}
+.p3-right
+{
+    width: 48%;
+    /* border: 1px solid; */
+    padding: 20px;
+}
+.deno img{
+    width: 30%;
+}
+.deno
+{
+    display: flex;
+    gap: 3rem;
+    align-items: end;
+}
+.p3-right .p{
+    line-height:3;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media qqueries------------------------------------------------------------------ */
+
+
+@media (max-width:991px)
+{
+    html {
+        font-size: 55%;
+    }
+    header{
+        padding: 1rem 2rem;
+    }
+}
+@media (max-width:768px)
+{
+
+    header .icons #menu-bars
+    {
+        display: inline-block;
+    }
+    .page2
+    {
+        flex-direction: column;
+        /* width: 100%; */
+    }
+    .page2 div
+    {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .page4
+    {
+        flex-direction: column;
+    }
+    .p3-left{
+        width: 100%;
+    }
+    .p3-right{
+        width: 100%;
+    }
+    .head h1
+    {
+        font-size: 3rem;
+    }
+
+
+    header .navbar
+    {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-bottom: .1rem; solid rgba(0,0,0,.2);
+        border-top: .1rem; solid rgba(0,0,0,.2);
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active
+    {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a
+    {
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: #eee;
+    }
+}
+
+@media (max-width:991px)
+{
+    html {
+        font-size: 50%;
+    }
+    
+   
+}
+@media (max-width:838px)
+{
+    .navbar
+    {
+        gap: 5.5rem;
+    }
+}
+@media (max-width:416px)
+{
+    .page1 h1{
+        font-size: 6rem;
+    }
+    .page1 .button{
+        flex-direction: column;
+    }
+    .head h1
+    {
+        font-size: 4rem;
+    }
+    .head
+    {
+        flex-direction: column;
+        text-align: center;
+        gap: 0px;
+    }
+}
+
+

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Complete Responsive Food Website Design Tutorial</title>
+
+        <!-- font awesome cdn link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        
+         <!-- custom css file link -->
+        <link rel="stylesheet" href="style.css">
+
+        
+
+</head>
+<body>
+
+    <!-- header section start----------------------------------------------------------- -->
+
+    <header>
+        <a href="#" class="logo"><i class="fas fa-untensils"></i>High Tech</a>
+
+        <nav class="navbar">
+                <a class="active" href="#home">home</a>
+                <a href="#about"> about</a>
+                <a href="#What we do">What we do</a>
+                <a href="#Portfolio">Portfolio</a>
+                <a href="#Contact us">Contact us</a>
+                <a href="#Login">Login</a>
+                <i class="fa-solid fa-magnifying-glass"></i>
+        </nav>
+        <i class="fas fa-bars" id="menu-bars"></i>
+    </header>
+    <!-- header section end----------------------------------------------------------- -->
+
+
+    <section class="container">
+        <div class="page1">
+            <div>
+                <h1>Creative<br>Work Idea</h1>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</p>
+                <div class="button">
+                    <button>About Company</button>
+                    <button>Contact</button>
+                </div>
+            </div>
+            
+    </section>
+
+    <section class="container2">
+        <div class="heading"><h1>What we do</h1></div>
+
+
+        <div class="page2">
+            <div>
+                <img src="f-icon1.png" alt="">
+                <h2>website<br>development</h2>
+                <p>many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which</p>
+                <button>Read More</button>
+            </div>
+
+            <div>
+                <img src="f-icon1.png" alt="">
+                <h2>website<br>development</h2>
+                <p>many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which</p>
+                <button>Read More</button>
+            </div>
+
+            <div>
+                <img src="f-icon1.png" alt="">
+                <h2>website<br>development</h2>
+                <p>many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which</p>
+                <button>Read More</button>
+            </div>
+           
+
+        </div>
+    </section>
+
+    <section class="container3">
+        <div class="page3">
+        <div class="head">
+            <h1>Get In Touch</h1>
+            <h1>What Says Clients</h1>
+        </div>
+        </div>
+
+        <div class="page4">
+        <div class="p3-left">
+            <input type="text" placeholder="Name">
+            <input type="numbeer" placeholder="Phone Number">
+            <input type="text" placeholder="Email">
+            <textarea name="" placeholder="Message" id="area" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="p3-right">
+            <div class="deno">
+                <img src="computerr.jpg" alt="">
+                <h1>Deno</h1>
+                <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <div class="p">
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem IpsumIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+</body>
+
+    <script>
+        let menu = document.querySelector('#menu-bars');
+        let navbar = document.querySelector('.navbar');
+
+        menu.onclick = ()=> {
+        menu.classList.toggle('fa-times');
+        navbar.classList.toggle('active');
+
+}
+    </script>
+</html>
